@@ -1,29 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+< !DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internal CSS</title>
-    <style>
-        p {
-            color: purple
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Internal CSS</title>
+        <style>
+            p {
+                color: purple
+            }
 
-        #first_line {
-            color: red;
-        }
-    </style>
-</head>
+            /* Class are denoted by .
+               They basically contain properties that can be shared across variety of elements
+               unlike ID which are restricted to a particular element.
+            */
+            .font-26 {
+                font-size: 26px;
+            }
 
-<body>
-    <p id="first_line">
-        this is styled using id
-    </p>
-    <p>
-        this is styled using tag name
-    </p>
-</body>
+            #first_line {
+                color: red;
+            }
+        </style>
+    </head>
 
-</html>
+    <body>
+        <p id="first_line" class="font-26">this is styled using id </p>
+        <p class="font-26">this is styled using tag name </p>
+    </body>
+
+    </html>
