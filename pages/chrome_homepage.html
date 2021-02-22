@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome browser</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            background-color: #35363a;
+            height: 100vh;
+        }
+
+        #navigation {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+        }
+
+        #navigation a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+            margin-top: 10px;
+        }
+
+        #main-page {
+            margin-top: 100px;
+            width: 700px;
+            display: flex;
+            height: 500px;
+            margin: 70px auto;
+            justify-content: center;
+        }
+
+        #main-page #content {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+
+        #main-page #content h1 {
+            font-size: 5em;
+            color: white;
+            font-family: "Century Gothic";
+        }
+
+        #main-page #content input {
+            width: 100%;
+            height: 30px;
+            border-radius: 40px;
+            border: none;
+            padding: 10px;
+        }
+
+        #main-page #content #bookmarks {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #main-page #content #bookmarks .bookmark {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        /*  */
+        /* Specify that the property should be used when the mouse is over the element */
+        #main-page #content #bookmarks .bookmark:hover {
+            background-color: #2b2b2e;
+            cursor: pointer;
+        }
+
+        #main-page #content #bookmarks .bookmark .icon {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="navigation">
+            <a href="">Gmail</a>
+            <a href="">Images</a>
+        </div>
+        <div id="main-page">
+            <div id="content">
+                <h1>Google</h1>
+                <input type="text" placeholder="Search Google or type a URL">
+                <div id="bookmarks">
+                    <div class="bookmark">
+                        <div class="icon" style="background-image: url(/images/youtube.jpg);">
+                        </div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="bookmark">
+                        <div class="icon" style="background-image: url(/images/youtube.jpg);">
+                        </div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="bookmark">
+                        <div class="icon" style="background-image: url(/images/youtube.jpg);">
+                        </div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="bookmark">
+                        <div class="icon" style="background-image: url(/images/youtube.jpg);">
+                        </div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="bookmark">
+                        <div class="icon" style="background-image: url(/images/youtube.jpg);">
+                        </div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="bookmark">
+                        <div class="icon" style="background-image: url(/images/youtube.jpg);">
+                        </div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="bookmark">
+                        <div class="icon" style="background-image: url(/images/youtube.jpg);">
+                        </div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="bookmark">
+                        <div class="icon" style="background-image: url(/images/youtube.jpg);">
+                        </div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="bookmark">
+                        <div class="icon" style="background-image: url(/images/youtube.jpg);">
+                        </div>
+                        <div class="text">Youtube</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
