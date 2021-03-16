@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri';
+}
+
+#navbar {
+    background-color: black;
+    height: 50px;
+    color: white;
+    display: flex;
+}
+
+#navbar>img {
+    width: 120px;
+}
+
+#navbar>div {
+    display: flex;
+    width: 85px;
+    margin-bottom: 5px;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: red;
+    height: 100px;
+}
