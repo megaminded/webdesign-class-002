@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Calibri';
+    font-family: 'PT Sans';
 }
 
 #navbar {
@@ -10,18 +11,80 @@
     height: 50px;
     color: white;
     display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 14px;
 }
 
 #navbar>img {
     width: 120px;
 }
 
-#navbar>div {
+#navbar #location {
     display: flex;
     width: 85px;
     margin-bottom: 5px;
     align-items: flex-end;
+    justify-content:space-between;
+}
+#navbar 
+#search{
+    margin: 0;
+    display: flex;
+}
+#navbar 
+#search 
+select,
+input,
+button {
+    border: none;
+    height: 35px;
+    padding-left: 5px;
+}
+#navbar #search select{
+   width: 100px;
+   border-radius: 3px 0 0 3px;
+   background-color: #f3f3f3;
+}
+#navbar #search input{
+    width: 500px;
+}
+#navbar #search input:focus{
+outline: none;
+}
+#navbar #search button{
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbd64;
+    border-radius: 0 3px 3px 0;
+}
+#navbar #search button i{
+    font-size: 20px;
+}
+#navbar #language img {
+    width: 25px;
+}
+#navbar #language i {
+    color: #f3f3f3;
+}
+#navbar #cart{
+    display: flex;
     justify-content: space-between;
-    background-color: red;
-    height: 100px;
+    align-items: flex-end;
+}
+#navbar #cart #cart-icon{
+    display: flex;
+    justify-content: center;
+}
+#navbar #cart #cart-icon span{
+    position: absolute;
+    color: #ffbd64;
+    font-weight: 700;
+    top: -2px;
+}
+#navbar #cart span{
+    font-weight: 700;
 }
