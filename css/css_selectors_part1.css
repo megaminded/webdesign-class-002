@@ -1,0 +1,44 @@
+#hover-btn{
+    background-color: maroon;
+    padding: 5px;
+    width: 100px;
+    border: none;
+    color: white;
+}
+
+#hover-btn:hover{
+    color: yellow;
+    border-radius: 10px;
+}
+
+#focus-input:focus{
+    border: none;
+    outline: none;
+    background-color: rgba(129, 113, 113, 0.411);
+}
+#hover-image:hover{
+    opacity: 0.3;
+}
+
+#hover-div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+#hover-div:hover{
+    background-color: red;
+}
+.image-container{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.image-container img{
+    width: 400px;
+    transition: 0.5s ease;
+}
+.image-container img:hover{
+    transform: scale(1.1,1.1);
+    /* width: 450px; */
+    transition: 0.5s ease;
+}
